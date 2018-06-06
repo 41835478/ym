@@ -1,0 +1,1 @@
+{"appid":"","appkey":"","callback":"http://www.520menghuan.cn/reg/qqreturnlast.php","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}

@@ -1,0 +1,1103 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="明志源码网,源码网,网站源码,源码交易,源码交易平台,程序交易,软件交易，网站交易,站长交易,程序交易,域名交易,链接买卖,任务交易,广告买卖,站长培训,建站美工任务">
+<meta name="description" content="明志源码网站交易服务中心；源码网,网站源码,源码交易,源码交易平台,程序交易,软件交易，网站交易,站长交易,程序交易,域名交易,链接买卖,任务交易,广告买卖,站长培训,建站美工任务；安全快捷的站长交易、出售、求购、交流分享平台">
+<title> - 明志源码网</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<link href="css/bootcss.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/basic.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.m.js"></script>
+<script language="javascript" src="js/index.js"></script>
+<script language="javascript" src="js/index6.js"></script>
+<script language="javascript" src="js/layui.js"></script>
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" type="text/javascript" src="js/ss.js"></script>
+<script language="javascript">
+userCheckses();
+</script>
+
+
+
+<script language="javascript">
+if(is_mobile()) {document.location.href= 'http://www.slshop.cn/m/';}
+</script>
+</head>
+<body>
+
+
+
+
+<div class="bfb bfbtop fontyh">
+  <div class="yjcode">
+  
+    <span id="notlogin" style="display:none">
+      <nav class="nav_top">
+        <div class="container clearfix">
+          <div class="fr_left">
+            <ul class="clearfix nav_top_item">
+              <li class="clearfix top_user_info" id="top_user_info">
+                <div class="fl">
+                  <a href="http://www.slshop.cn/">
+                    <i class="iconfont">&#xe616;</i>
+                    明志源码网，靠谱的在线交易平台。</a></div>
+            </ul>
+          </div>
+          <div class="fr">
+            <ul class="clearfix nav_top_item">
+              <li class="clearfix top_user_info" id="top_user_info">
+                <div class="fl" style="display:none">
+                    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=&redirect_uri=http%3A%2F%2Fwww.slshop.cn%2Freg%2Fwxlogin.php&response_type=code&scope=snsapi_login#wechat_redirect">
+                    <i class="iconfont">&#xe638;</i>QQ登录</a></div>
+					<div class="fl" style="display:none">
+                  <a class="topLogin_btn" href="http://www.slshop.cn/config/qq/oauth/index.php">
+                    <i class="iconfont">&#xe638;</i>QQ登录</a></div>
+                <div class="fl">
+                  <a class="topLogin_btn" href="http://www.slshop.cn/reg/">
+                    <i class="iconfont">&#xe608;</i>登录</a></div>
+                <div class="fl">
+                  <a href="http://www.slshop.cn/reg/reg.php">
+                    <i class="iconfont">&#xe654;</i>注册</a></div>
+              </li>
+              <li>
+                <a href="http://www.slshop.cn/user/qiandao.php" target="_blank">
+                  <i class="iconfont">&#xe602;</i>每日签到</a></li>
+              <li>
+                <a href="http://www.slshop.cn/help/" target="_blank">
+                  <i class="iconfont">&#xe602;</i>帮助</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </span>
+	
+    <span id="yeslogin" style="display:none">
+      <nav class="nav_top">
+        <div class="container clearfix">
+          <div class="fr_left">
+            <ul class="clearfix nav_top_item">
+              <li class="clearfix top_user_info" id="top_user_info">
+                <div class="fl">
+                  <a href="index.php">
+                    <i class="iconfont">&#xe616;</i>明志源码网</a></div>
+            </ul>
+          </div>
+          <div class="fr">
+            <ul class="clearfix nav_top_item">
+              <li>
+                <font size="" color="#ffff00">
+                  <a id="yesuid" href="http://www.slshop.cn/user/index.php"></a>
+                </font>
+              </li>
+              <li class="position_re my_browse">
+                <a href="http://www.slshop.cn/user/index.php">
+                  <i class="iconfont">&#xe608;</i>个人中心</a></li>
+              <li class="clearfix top_user_info" id="top_user_info"></li>
+              <li>
+                <a href="http://www.slshop.cn/user/qiandao.php" target="_blank" id="needqd" style="display:none;">
+                  <i class="iconfont">&#xe618;</i>每日签到</a></li>
+              <li>
+                <a href="http://www.slshop.cn/user/qiandao.php" target="_blank" id="dontqd" style="display:none;">
+                  <i class="iconfont">&#xe620;</i>今日已签到</a></li>
+              <li>
+                <a href="http://www.slshop.cn/help/" target="_blank">
+                  <i class="iconfont">&#xe602;</i>帮助</a></li>
+              <li>
+                <a href="http://www.slshop.cn/user/un.php">
+                  <i class="iconfont">&#xe609;</i>退出</a>
+                <li class="l2">
+                  <span id="yeslogin" style="display:none">欢迎您：
+                    <span id="yesuid"></span>&nbsp;&nbsp; [
+                    <a class="feng" href="http://www.slshop.cn/user/qiandao.php" id="needqd" style="display:none;">每日签到</a>
+                    <a class="blue" id="dontqd" style="display:none;" href="http://www.slshop.cn/user/qiandao.php">今日已签到</a>]&nbsp;&nbsp;
+                    <a href="http://www.slshop.cn/user/un.php">退出</a></span>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </span>
+	
+  </div>
+</div>
+
+<span id="webhttp" style="display:none">http://www.slshop.cn/</span>
+<script language="javascript">
+userCheckses();
+</script>
+<div class="yjcode"></div>
+<div class="yjcode"></div>
+
+<div class="bfb bfbtop1">
+<div class="yjcode">
+ <div class="top1">
+  <h1 class="logo"><a href="http://www.slshop.cn/"><img alt="明志源码网" border="0" src="http://www.slshop.cn/img/logo.png" /></a></h1>
+  
+  <form name="topf1" method="post" onSubmit="return topftj()">
+  <ul class="u1">
+  <li class="l1" onMouseOver="topover()" onMouseOut="topout()">
+  <span id="topnwd">商品</span>
+  <div id="topdiv" style="display:none;">
+  <a href="javascript:void();" onClick="topjconc(1,'商品')">商品</a>
+  <a href="javascript:void();" onClick="topjconc(2,'店铺')">店铺</a>
+  <a href="javascript:void();" onClick="topjconc(3,'资讯')">资讯</a>
+  </div>
+  </li>
+  <li class="l2"><input name="topt" id="topt" type="text" /></li>
+  <li class="l3"><input type="image" src="http://www.slshop.cn/homeimg/btn1.gif" /></li>
+  </ul>
+  </form>
+ <div class="sqkd"><a href="/user/openshop1.php">申请开店</a></div>
+
+<div class="menu fontyh">
+
+
+
+
+
+
+
+
+
+
+
+
+ <span id="typeallnum" style="display:none;"></span>
+   <div class="m1" onmouseover="leftmenuover()" onmouseout="leftmenuout()">
+   <span class="t">全部分类</span>
+   <!--主导航下拉开始-->
+   <div class="menun fontyh" id="leftmenu" style="display:none;">
+    <!--商品B-->
+	       <div  id="yhmenu1" class="menu1" onmouseover="yhmenuover(1)" onmouseout="yhmenuout(1)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j93v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_93.png" /></span>
+	 <span class="s1">网站源码</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu1" class="rmenu rmenu1" style="display:none;margin-top:-49px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k101v.html">企业公司</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k102v.html">文章资讯</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k103v.html">淘客返利</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k104v.html">图片素材</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k105v.html">软件下载</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k106v.html">电影音乐</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k107v.html">游戏动漫</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k108v.html">威客任务</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k109v.html">购物商城</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k110v.html">建筑装饰</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k111v.html">机械设备</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k112v.html">电子数码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k113v.html">汽车服务</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k114v.html">健康医疗</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k115v.html">教育培训</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k116v.html">母婴家政</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k117v.html">餐饮酒店</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k118v.html">旅游婚庆</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k119v.html">房产租售</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k120v.html">物流快递</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k121v.html">微信系统</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k122v.html">wap网站</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k123v.html">论坛门户</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k124v.html">聊天交友</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k125v.html">外贸网站</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k126v.html">广告设计</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k127v.html">网络公司</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k128v.html">金融借贷</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k129v.html">办公系统</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k130v.html">o2o系统</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k131v.html">分类导航</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k132v.html">汽车车行</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j93v_k133v.html">其他行业</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu2" class="menu1" onmouseover="yhmenuover(2)" onmouseout="yhmenuout(2)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j94v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_94.png" /></span>
+	 <span class="s1">10元源码</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu2" class="rmenu rmenu1" style="display:none;margin-top:-99px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k134v.html">php源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k135v.html">asp源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k136v.html">.NET源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k137v.html">java源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k138v.html">html源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j94v_k139v.html">其他源码</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu3" class="menu1" onmouseover="yhmenuover(3)" onmouseout="yhmenuout(3)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j95v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_95.png" /></span>
+	 <span class="s1">扩展插件</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu3" class="rmenu rmenu1" style="display:none;margin-top:-149px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k140v.html">discuz</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k141v.html">phpwind</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k142v.html">ecshop</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k143v.html">wordpress</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k144v.html">dede</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j95v_k145v.html">其他</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu4" class="menu1" onmouseover="yhmenuover(4)" onmouseout="yhmenuout(4)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j96v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_96.png" /></span>
+	 <span class="s1">网站教程</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu4" class="rmenu rmenu1" style="display:none;margin-top:-199px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j96v_k146v.html">文字教程</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j96v_k147v.html">视频教程</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j96v_k148v.html">远程指导</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j96v_k149v.html">其他教程</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu5" class="menu1" onmouseover="yhmenuover(5)" onmouseout="yhmenuout(5)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j97v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_97.png" /></span>
+	 <span class="s1">图片素材</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu5" class="rmenu rmenu1" style="display:none;margin-top:-249px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j97v_k150v.html">高清图片</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j97v_k151v.html">psd素材</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j97v_k152v.html">ppt模板</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j97v_k153v.html">游戏素材</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j97v_k154v.html">其他素材</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu6" class="menu1" onmouseover="yhmenuover(6)" onmouseout="yhmenuout(6)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j98v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_98.png" /></span>
+	 <span class="s1">idc主机</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu6" class="rmenu rmenu1" style="display:none;margin-top:-299px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j98v_k155v.html">服务器</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j98v_k156v.html">vps</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j98v_k157v.html">虚拟主机</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j98v_k158v.html">服务器托管</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j98v_k159v.html">其他空间</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu7" class="menu1" onmouseover="yhmenuover(7)" onmouseout="yhmenuout(7)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j99v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_99.png" /></span>
+	 <span class="s1">服务大厅</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu7" class="rmenu rmenu1" style="display:none;margin-top:-349px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k160v.html">网站优化</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k161v.html">代办服务</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k162v.html">网站安装</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k163v.html">网站运营</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k164v.html">seo优化</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k165v.html">wap开发</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k166v.html">app开发</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j99v_k167v.html">其他服务</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+	      <div  id="yhmenu8" class="menu1" onmouseover="yhmenuover(8)" onmouseout="yhmenuout(8)">
+     <div class="lu1">
+	 <a href="http://www.slshop.cn/product/search_j100v.html">
+	 <span class="s0"><img src="http://www.slshop.cn/upload/type/type1_100.png" /></span>
+	 <span class="s1">软件大厅</span>
+	 <span class="s2"><img src="http://www.slshop.cn/homeimg/mj.png" /></span></a></div>
+	 
+	 
+      <div id="rmenu8" class="rmenu rmenu1" style="display:none;margin-top:-399px;" >
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j100v_k168v.html">破解软件</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j100v_k169v.html">QQ工具</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j100v_k170v.html">营销软件</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j100v_k171v.html">办公软件</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	        <ul class="ru1">
+	  <li class="l1"><a href="http://www.slshop.cn/product/search_j100v_k172v.html">其他工具</a></li>
+      <li class="l2">
+            </li>
+      </ul>
+	  	  
+	        
+	       </div>
+		   
+		   
+    </div>
+		
+
+        <!--商品E-->
+   </div>
+   <!--主导航下拉结束-->
+   </div> 
+   <!--左E-->
+
+   <div class="m2">
+     <a href="http://www.slshop.cn/" id="topmenu1">首页</a>
+      <a href="http://www.slshop.cn/product/search_j93v.html">网站源码</a>
+      <a href="http://www.slshop.cn/product/search_j99v.html">服务大厅</a>
+      <a href="http://www.slshop.cn/product/search_j100v.html">软件大厅</a>
+      <a href="/news/">站长新闻</a>
+      <a href="/shop/">商家风采</a>
+      <a href="/mt/">手机版</a>
+      <a href="/task">任务大厅</a>
+      </div>
+   <span id="leftnone" style="display:none">0</span>
+<script language="javascript">
+leftmenuover();
+yhifdis(0);
+document.getElementById("topmenu1").className="a1";
+</script>
+
+ <!--切换B-->
+<div class="t_center">
+<div id="focus"><td>    
+ <ul> 
+       <li><a href="http://www.aspzhan.com"><img src="gg/1516550722ad62.jpg" width="636" height="221" border="0" alt="明志源码网"/></a></li>
+  	</ul>
+</div>
+	
+	
+	<div class="scrollbox">
+	<div class="scroltit"><strong>最新交易</strong><em>实时交易网站播报【明志源码网】</em><small title="向上" id="but_up" style="cursor: pointer;"><i class="iconfont">&#xe654;</i></small><small title="向下" id="but_down" style="cursor: pointer;"><i class="iconfont">&#xe652;</i></small></div>
+    <div id="scrollDiv">
+   <ul style="margin-top: 0px;">
+        
+      </div>
+</div>
+</div>
+
+
+
+<div class="t_right">
+<div class="index_user">
+<!--公告调用开始-->
+<div class="iright">
+ <ul class="ksdl" id="notlogin1"  style="">
+ <li class="l1"><a href="reg/index.html" class="a1"></a><a href="reg/reg.html" class="a2"></a></li>
+    	<a href="reg/reg.php" target="_blank" class="iu_reg"></a>
+		<a href="reg/index.php" onClick="layer_login();" class="iu_login"></a>
+		<div class="user_third"><span>第三方帐号登录：</span>
+		<a target="_blank"  href="config/qq/oauth/index.php" class='login_icon'></a>
+		<a target="_blank"  href="https://open.weixin.qq.com/connect/qrconnect?appid=&redirect_uri=http%3A%2F%2Fwww.slshop.cn%2Freg%2Fwxlogin.php&response_type=code&scope=snsapi_login#wechat_redirect"  class='login_icon login_click' id='wechat'></a>
+ </div>
+ </ul>
+ <ul class="ksdl2" id="yeslogin1" style="display:none;">
+ <li class="l1">
+ <li class="iu_tx"><a href="user/index.php" target="_blank"><img border="0" src="picture/nonetx.gif" id="itx" width="48" height="48" align="left"></a>
+  <li class="iu_name">欢 迎 您：<span id="yesuid1" class="blue"></span>
+  <li class="iu_name">可用余额：<span id="imoney1" class="s2"></span>
+  <li class="iu_link"><a href="user/index.php">会员中心</a> 
+ <a href="user/favpro.php">我的收藏</a> <a href="user/order.php">订单</a><a href="user/jflog.php">积分</a>	<a href="user/un.php">退出</a>		</li></ul>
+ </li>
+ </ul>
+ <ul class="u12 fontyh">
+ </ul>
+ </div>
+ <script language="javascript">idldl(1);</script>
+ <!--快速登录E-->
+</div>
+<div class="index_gg">
+<ul class="tit">明志源码网 - 统计指数：<span class="bz"></span></ul>
+<ul>
+<li><span>商  品：<em>3</em> 个</span> 
+
+ <span>会  员：<em>6</em> 位</span></li> 
+
+<li><span>交  易：<em>0</em> 笔</span>
+ <span>金 额：<em>0</em> 元</span></li> 
+
+</ul>
+<ul class="tit">网站公告 <a href="help/gglist.html" target="_blank" class="ggmore">More></a></ul>
+<ul>
+<li>
+
+   
+<li><div class="gt"><a href="help/ggview3.html" title="站长云空间9元/年起，免费试用" target=_blank> 
+  【网站公告】站长云空间9元/年起，免费试用</A></div><div class="date">[01/20]</div></li>
+  
+<li><div class="gt"><a href="help/ggview2.html" title="免费源码分享，站长资源平台" target=_blank> 
+  【网站公告】免费源码分享，站长资源平台</A></div><div class="date">[01/20]</div></li>
+    
+
+</ul>
+</div>
+</div>
+
+
+
+
+
+</div>
+  </div>
+ </div>
+</div>
+</div>
+  </div>
+ </div>
+</div>
+</div>
+
+<div class="yjcode">
+  <div class="ad1"></a></div> 
+  
+  
+  
+  
+  
+  
+<div class="bfb bfbtoj">
+<div class="yjcode">
+<ul class="bfbtoj_di">
+
+ <div class="d1">
+  
+	<li><a href="http://www.slshop.cn/" target="_blank"> <img alt="欢迎会员" border=0 src="gg/1526282204ad16.gif" width="406" height="50"></a></li>
+   </div>
+  <div class="d2"> <div class="notice fr">
+	
+
+
+		<div class="txtscroll">
+	
+	<i class="yy-icon yy-laba"></i>
+
+	<div class="bd">
+		<div class="tempWrap" style="overflow:hidden; position:relative; height:20px"><ul style="height: 360px; position: relative; padding: 0px; margin: 0px; top: -120px;">
+ 
+
+		<li style="height: 20px;">欢迎最新商家
+	<font  size="" color="#00b36"><a href="shop/view5.html" target="_blank">官方自营软件</a></font> 	加入明志源码网	
+ 
+		<li style="height: 20px;">欢迎最新商家
+	<font  size="" color="#00b36"><a href="shop/view4.html" target="_blank">新站网源码</a></font> 	加入明志源码网	
+ 
+		<li style="height: 20px;">欢迎最新商家
+	<font  size="" color="#00b36"><a href="shop/view2.html" target="_blank">yctnwl</a></font> 	加入明志源码网	
+ 
+		<li style="height: 20px;">欢迎最新商家
+	<font  size="" color="#00b36"><a href="shop/view1.html" target="_blank">tnwlkj</a></font> 	加入明志源码网	
+ 		</ul></div>
+	</div>
+			<div class="hd"><a class="next"></a><a class="prev"></a></div>
+			  <script>jQuery(".txtscroll").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,easing:"easeOutCirc"});</script>
+		</div>
+</div>
+ </div></div>
+ 
+</div>  
+
+
+
+
+
+
+ 
+ <div class="yjcode">
+ 
+  
+<!--推荐产品B-->
+<div class="tjpro">
+ <ul class="u0"><li class="l1"><span class="s0"><img src="http://www.slshop.cn/homeimg/to1.png" /></span><span class="s1">限时抢购</span></li><li class="l2"><a href="product/"class="l2">查看更多 ></a></li></ul>
+     <ul class="u1">
+ <li class="l1">
+ <span id="dqsj1" style="display:none;">2028/05/25 16:19:56</span>
+ <img src="upload/4/1526285920-4/0096877001526285971tp4-1.jpg">
+ <div class="d1"><a target="_blank" href="product/view21.html"><span class="list-name" id="djs1"></span></span><em class="look-but">我要购买</em></a></div>
+ </li>
+ <li class="l2"> <a href="product/view21.html" target="_blank" title="我只是来测试的">我只是来测试的</a></li>
+  <div class="d2">
+    &nbsp;&nbsp;<font size="2" color="">2018-05-14</font></time>
+   <em class="a4">￥20.00</em></span>
+ </ul>
+    <ul class="u1">
+ <li class="l1">
+ <span id="dqsj2" style="display:none;">2028/05/31 16:20:55</span>
+ <img src="upload/4/1526285990-4/0956252001526286017tp4-1.jpg">
+ <div class="d1"><a target="_blank" href="product/view22.html"><span class="list-name" id="djs2"></span></span><em class="look-but">我要购买</em></a></div>
+ </li>
+ <li class="l2"> <a href="product/view22.html" target="_blank" title="11111111">11111111</a></li>
+  <div class="d2">
+    &nbsp;&nbsp;<font size="2" color="">2018-05-14</font></time>
+   <em class="a4">￥50.00</em></span>
+ </ul>
+     <script language="javascript">
+ userChecksj();
+ </script>
+ 
+ </div>
+<script language="javascript">
+userChecksj();
+</script>
+<!--推荐产品E-->
+
+
+
+<!--商品列表推荐商家B-->
+<div class="taskm">
+ <ul class="u1">
+ <li class="l1 l11" id="taska1" onMouseOver="taskover(1)"><span class="s0"><img src="http://www.slshop.cn/homeimg/to4.png"></span>推荐商家</li>
+ <li class="l0"><span></span></li>
+ <li class="l1" id="taska2" onMouseOver="taskover(2)"><span class="s0"><img src="http://www.slshop.cn/homeimg/to5.png"></span>热门商品</li>
+
+<li class="index_menu">
+
+<span>
+  
+<a href="http://www.slshop.cn/product/search_j93v_e57_60v.html" target="_blank">织梦</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e57_61v.html" target="_blank">帝国</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e57_67v.html" target="_blank">thinkphp</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e57_64v.html" target="_blank">ecshop</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e57_62v.html" target="_blank">Discuz</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e58_70v.html" target="_blank">ASP</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e58_69v.html" target="_blank">PHP</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j93v_e58_71v.html" target="_blank">.NET</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j99v_k172v.html" target="_blank">vps</a>
+
+  
+<a href="http://www.slshop.cn/task/" target="_blank">威客任务</a>
+
+  
+<a href="http://www.slshop.cn/product/search_j100v_k177v.html" target="_blank">建站优化</a>
+
+  
+
+
+  </span>
+ </li>
+ </ul>
+ 
+  <div class="d1" id="taskm1" >
+<div class="rec_shop">
+<div>
+     <ul><li>
+      <a href="shop/view146.html" class="avatar" target="_blank"><img src="upload/1/shop.jpg" /></a>
+	  <span class="info"><a href="shop/view1.html" target="_blank" class="name" >tnwlkj</a>
+	 
+     <p  class="i_bz"><img src="img/dj/s-star-1.gif" title="0分" /></p>
+	 
+	 <p><a class='slink' href="shop/view1.html" target="_blank">TA的店铺</a></p>
+	
+	 
+	 </span>
+   </ul>
+     <ul><li>
+      <a href="shop/view146.html" class="avatar" target="_blank"><img src="upload/2/shop.jpg" /></a>
+	  <span class="info"><a href="shop/view2.html" target="_blank" class="name" >yctnwl</a>
+	 
+     <p  class="i_bz"><img src="img/dj/s-star-1.gif" title="0分" /></p>
+	 
+	 <p><a class='slink' href="shop/view2.html" target="_blank">TA的店铺</a></p>
+	
+	 
+	 </span>
+   </ul>
+     <ul><li>
+      <a href="shop/view146.html" class="avatar" target="_blank"><img src="upload/4/shop.jpg" /></a>
+	  <span class="info"><a href="shop/view4.html" target="_blank" class="name" >新站网源码</a>
+	 
+     <p  class="i_bz"><img src="img/dj/s-star-1.gif" title="0分" /></p>
+	 
+	 <p><a class='slink' href="shop/view4.html" target="_blank">TA的店铺</a></p>
+	
+	 
+	 </span>
+  	 	   <li class='hot_goods'>
+	   <strong>TA的宝贝<i>(2)</i></strong>
+	   	   <p><em>￥50.00</em>
+		   <a href="../product/view22.html" target="_blank" >11111111</a></p>
+		 </li>
+ </ul>
+  
+ 
+ 
+ 
+ </div>
+  </div>
+   </div>
+ <div class="d1" id="taskm2" style="display:none;">
+ 
+      <ul class="u2">
+  <li class="l1"><span class="feng">￥50.00</span> <a href="product/view22.html" title="11111111" target="_blank">11111111</a></li>
+  <li class="l2">发布时间： 2018-05-14</li>
+  </ul>
+       <ul class="u2">
+  <li class="l1"><span class="feng">￥20.00</span> <a href="product/view21.html" title="我只是来测试的" target="_blank">我只是来测试的</a></li>
+  <li class="l2">发布时间： 2018-05-14</li>
+  </ul>
+      
+  </div>
+ <div class="d2">
+  <a href="#" class="a1">近期收入榜</a>
+ <div class="tjshop fontyh">
+  <div class="dleft">
+        <ul class="u1">
+  <li class="li"><img width="85" height="85" src="upload/1/shop.jpg" /></li>
+  <li class="l2">
+  <a href="shop/view1.html" target="_blank">tnwlkj</a>
+  <span class="s1">收入：</span>
+  <span class="s2">￥<strong>0</strong></span>
+  </li>
+  </ul>
+            <ul class="u2">
+  <li class="l1"><img width="40" height="40" src="upload/2/shop.jpg" /></li>
+  <li class="l2 l22">
+  <a href="shop/view2.html" target="_blank">yctnwl</a>
+  <span class="s1">收入：</span>
+  <span class="s2">￥<strong>0</strong></span>
+  </li>
+  </ul>
+        <ul class="u2">
+  <li class="l1"><img width="40" height="40" src="upload/4/shop.jpg" /></li>
+  <li class="l2 l22">
+  <a href="shop/view4.html" target="_blank">新站网源码</a>
+  <span class="s1">收入：</span>
+  <span class="s2">￥<strong>0</strong></span>
+  </li>
+  </ul>
+      
+    </div>
+</div> 
+</div>
+<!--商品列表推荐商家E-->
+
+
+<!--文字友情-->
+<div class="indexcap fontyh"style="display:none;">友情链接</div>
+<div class="mr_frbox">
+<div id="linkBoxContent" class="clearfix f14">  
+<div class="linkBox_div">
+  <a href="http://www.aspzhan.com" target="_blank">新站网</a>
+  <a href="https://bbs.aspzhan.com" target="_blank">新站源码社区</a>
+       
+ 
+ 
+  </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+ <!--友情E-->
+</div>
+</div>
+
+</div>
+
+
+ <div class="bfb bfbbot">
+  <div class="yjcode">
+   <div class="d1"><img src="https://www.aspzhan.com/homeimg/blogo.jpg" /></div>
+    <div class="d2"> 
+       
+  <span class="s3">官方客服：</span>
+   </div>
+ <ul class="u1">
+ <li class="l1">客户指南</li>
+ <li class="l2">
+  <a href="http://www.slshop.cn/help/search_j9v.html">买家指南</a>
+  <a href="http://www.slshop.cn/help/search_j10v.html">卖家指南</a>
+  <a href="http://www.slshop.cn/help/search_j11v.html">安全交易</a>
+  <a href="http://www.slshop.cn/help/search_j12v.html">常见问题</a>
+  <a href="http://www.slshop.cn/help/search_j13v.html">服务中心</a>
+  
+  </li>
+ </ul>
+ <ul class="u2">
+ <li class="l1">手机访问</li>
+ <li class="l2"><img src="http://www.slshop.cn/tem/getqr.php?u=http://www.slshop.cn/m&size=4" /></li>
+ </ul>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="bfb bfbbot1">
+<div class="yjcode">
+ <div class="bq">
+ <a href="http://www.slshop.cn/">网站首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="http://www.slshop.cn/help/aboutview2.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="http://www.slshop.cn/help/aboutview3.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="http://www.slshop.cn/help/aboutview4.html">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="http://www.slshop.cn/help/aboutview5.html">隐私条款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="http://www.slshop.cn/help/aboutview6.html">免责声明</a><br>
+ CopyRight 2014-2024 明志源码网 | <br><br>
+
+
+
+</div>
+</div>
+
+
+
+<script language="javascript">
+$(".prolist .u1 .l1").mouseenter(function () {
+    $(this).find('.d1').eq(0).stop().animate({'top': '6px'}, 200);
+});
+$(".prolist .u1 .l1").mouseleave(function () {
+    $(this).find('.d1').eq(0).stop().animate({'top': '-50px'}, 200);
+});
+</script>
+</body>
+</html>
